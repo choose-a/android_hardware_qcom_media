@@ -53,7 +53,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include <stdlib.h>
 #include <media/hardware/HardwareAPI.h>
 #include <sys/eventfd.h>
-#include <cutils/native_handle.h>
+#include <nativebase/nativebase.h>
 
 #if !defined(_ANDROID_) || defined(SYS_IOCTL)
 #include <sys/ioctl.h>
