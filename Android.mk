@@ -1,4 +1,5 @@
 LOCAL_PATH := $(call my-dir)
+ifeq ($(TARGET_QCOM_MEDIA_VARIANT),)
 # TODO:  Find a better way to separate build configs for ADP vs non-ADP devices
 ifneq ($(TARGET_BOARD_AUTO),true)
 
@@ -18,4 +19,5 @@ else ifneq ($(wildcard $(LOCAL_PATH)/$(TARGET_BOARD_PLATFORM)),)
   include $(call all-named-subdir-makefiles,$(TARGET_BOARD_PLATFORM))
 endif
 
+endif
 endif
